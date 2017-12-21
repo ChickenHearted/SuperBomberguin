@@ -1,0 +1,104 @@
+
+  window.onload=function() {
+  var xlinks = 50;
+  var ylinks = 50;
+  var xrechts = 850;
+  var yrechts = 450;
+  var key, pos = 0;
+  var canvas = document.getElementById("zweispieler_canvas");
+  var ctx = canvas.getContext("2d");
+  var penguLinks = new Image();
+  var penguRechts = new Image();
+
+  penguLinks.onload=function() {
+    ctx.drawImage(penguLinks, xlinks, ylinks, 50, 50);
+  }
+
+  penguRechts.onload=function() {
+    ctx.drawImage(penguRechts, xrechts, yrechts, 50, 50);
+  }
+
+  penguLinks.src ='images/pengu_nachRechts.png';
+  penguRechts.src ='images/pengu_nachLinks.png';
+  document.onkeydown=function(e) {
+    pos = 1;
+    key = window.event?e.keyCode:e.which;
+  }
+
+  document.onkeyup=function(e) { pos = 0; }
+  setInterval (function() {
+    ctx.drawImage(penguLinks, xlinks, ylinks, 50, 50);
+    if(pos == 0) return;
+    if(key == 65) {
+      if (xlinks == 50){
+        xlinks -= 0;
+      }
+      else {
+      xlinks -= 1;
+      }
+    }
+    if(key == 87) {
+      if (ylinks == 50){
+        ylinks -= 0;
+      }
+      else {
+      ylinks -= 1;
+      }
+    }
+    if(key == 68) {
+      if (xlinks == 850){
+        xlinks += 0;
+      }
+      else {
+      xlinks += 1;
+      }
+    }
+    if(key == 83) {
+      if (ylinks == 450){
+        ylinks += 0;
+      }
+      else {
+      ylinks += 1;
+      }
+    }
+    ctx.drawImage(penguLinks, xlinks, ylinks, 50, 50);
+  }, 3);
+
+  document.onkeyup=function(e) { pos = 0; }
+  setInterval (function() {
+    if(pos == 0) return;
+    if(key == 37) {
+      if (xrechts == 50){
+        xrechts -= 0;
+      }
+      else {
+      xrechts -= 1;
+      }
+    }
+    if(key == 38 && y > 50) {
+      if (yrechts == 50){
+        yrechts -= 0;
+      }
+      else {
+      yrechts -= 1;
+      }
+    }
+    if(key == 39) {
+      if (xrechts == 850){
+        xrechts += 0;
+      }
+      else {
+      xrechts += 1;
+      }
+    }
+    if(key == 40) {
+      if (yrechts == 450){
+        yrechts += 0;
+      }
+      else {
+      yrechts += 1;
+      }
+    }
+    ctx.drawImage(penguRechts, xrechts, yrechts, 50, 50);
+  }, 3);
+  }

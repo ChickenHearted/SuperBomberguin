@@ -91,11 +91,11 @@
   var bombe = new Image();
 
   penguLinks.onload=function() {
-    ctx.drawImage(penguLinks, xlinks, ylinks, 45, 45);
+    ctx.drawImage(penguLinks, xlinks, ylinks, 50, 50);
   }
 
   penguRechts.onload=function() {
-    ctx.drawImage(penguRechts, xrechts, yrechts, 45, 45);
+    ctx.drawImage(penguRechts, xrechts, yrechts, 50, 50);
   }
 
 
@@ -111,7 +111,7 @@
   setInterval (function() {
 
     if (key == 32) {
-    ctx.drawImage(bombe, xlinks, ylinks, 45, 45);
+    ctx.drawImage(bombe, xlinks, ylinks, 50, 50);
     }
     if(pos == 0) return;
 
@@ -132,6 +132,9 @@
 
     // Guin läuft nach oben
     if(key == 87) {
+
+      //alert('guin nach oben');
+
       if (ylinks == 50){
         ylinks -= 0;
       }
@@ -139,14 +142,17 @@
       ylinks -= 1;
       }
     // 1.Eisblock blocken
-      if ((ylinks + 50) == 100 && (xlinks >= 101 && xlinks <= 149)) {
-        ylinks = 51;
+      if (ylinks == 150 && (xlinks >= 51 && xlinks <= 149)) {
+        ylinks = 151;
         return;
       }
     }
 
     // Guin löuft nach rechts
     if(key == 68) {
+
+        //alert('guin nach rechts');
+
       if (xlinks == 850){
         xlinks += 0;
       }
@@ -181,13 +187,13 @@
       }
     }
 
-    ctx.drawImage(penguLinks, xlinks, ylinks, 45, 45);
+    ctx.drawImage(penguLinks, xlinks, ylinks, 50, 50);
   }, 3);
 
   document.onkeyup=function(e) { pos = 0; }
   setInterval (function() {
     if (key == 16) {
-    ctx.drawImage(bombe, xrechts, yrechts, 45, 45);
+    ctx.drawImage(bombe, xrechts, yrechts, 50, 50);
     }
     if(pos == 0) return;
     if(key == 37) {
@@ -222,6 +228,6 @@
       yrechts += 1;
       }
     }
-    ctx.drawImage(penguRechts, xrechts, yrechts, 45, 45);
+    ctx.drawImage(penguRechts, xrechts, yrechts, 50, 50);
   }, 3);
   }
