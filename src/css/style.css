@@ -1,0 +1,397 @@
+#canvas {
+  border: 1px solid; width: 950px; height: 650px;
+  background-image: url('../images/prenguinBackground.jpg');
+  margin: 8% 0% 0% 25%;
+}
+#anleitung_canvas {
+  border: 1px solid; width: 950px; height: 650px;
+  background-image: url('../images/left_prenguinBackground.jpg');
+  margin: 8% 0% 0% 25%;
+}
+#zweispieler_canvas {
+  border: 1px solid; width: 950px; height: 650px;
+  background-image: url('../images/lightblueBackground.jpg');
+  margin: 8% 0% 0% 25%;
+}
+body {
+  background-image: url('http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg');
+  font-style: Arial;
+}
+#zweispieler {
+  position: absolute;
+  top: 450px;
+  left: 1200px;
+}
+#zweispieler:hover {
+  top: 453px;
+}
+#einspieler {
+  position: absolute;
+  top: 510px;
+  left: 1200px;
+}
+#einspieler:hover {
+  top: 513px;
+}
+#anleitung {
+  position: absolute;
+  top: 570px;
+  left: 1200px;
+}
+#anleitung:hover {
+  top: 573px;
+}
+#rueckmeldung {
+  position: absolute;
+  top: 630px;
+  left: 1200px;
+}
+#rueckmeldung:hover {
+  top: 633px;
+}
+#weitereSpiele {
+  position: absolute;
+  top: 690px;
+  left: 1200px;
+}
+#weitereSpiele:hover {
+  top: 693px;
+}
+#home {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+#home:hover {
+  top: 153px;
+}
+#zurueck {
+  position: absolute;
+  top: 150px;
+  left: 500px;
+}
+#zurueck:hover {
+  top: 153px;
+}
+#zuruck {
+  position: absolute;
+  top: 725px;
+  left: 400px;
+}
+#zuruck:hover {
+  top: 728px;
+}
+button {
+  font-size: 15px;
+  font-style: Arial;
+  font-weight: bold;
+  color: white;
+  background-color: #cb4e4e;
+  border: solid 10px #cb4e4e;
+  border-radius: 1.5em;
+  box-shadow: 0 6px #ab3c3c;
+}
+.speech {
+  position: absolute;
+  top: 160px;
+  left: 785px;
+	width: 585px;
+	height: 570px;
+  padding: 1em;
+	background-color: white;
+	border: 8px solid #cb4e4e;
+	border-radius: 15px;
+  box-shadow: 0 6px #ab3c3c;
+}
+p.speech:before {
+	content: ' ';
+	position: absolute;
+	left: -40px;
+	top: 350px;
+	border: 18px solid;
+	border-color:  transparent #cb4e4e #cb4e4e transparent;
+}
+#titel {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #cb4e4e;
+}
+.untertitel {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#spieler1 {
+  color: #cb4e4e;
+}
+#spieler2 {
+  color: #cb4e4e;
+  padding-left: 200px;
+}
+#w {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+#a {
+  position: absolute;
+  top: 198px;
+  left: 53px;
+}
+#s {
+  position: absolute;
+  top: 198px;
+  left: 103px;
+}
+#d {
+  position: absolute;
+  top: 198px;
+  left: 153px;
+}
+#leertaste {
+  position: absolute;
+  top: 248px;
+  left: 75px;
+}
+#hoch {
+  position: absolute;
+  top: 198px;
+  left: 350px;
+}
+#links {
+  position: absolute;
+  top: 248px;
+  left: 303px;
+}
+#unten {
+  position: absolute;
+  top: 248px;
+  left: 353px;
+}
+#rechts {
+  position: absolute;
+  top: 248px;
+  left: 403px;
+}
+#shift {
+  position: absolute;
+  top: 148px;
+  left: 385px;
+}
+#bombeLeer {
+  position: absolute;
+  top: 320px;
+  left: 20px;
+}
+#bombeShift {
+  position: absolute;
+  top: 320px;
+  left: 130px;
+}
+#nachobenPfeil {
+  position: absolute;
+  top: 370px;
+  left: 20px;
+}
+#nachobenW {
+  position: absolute;
+  top: 371px;
+  left: 73px;
+}
+#nachlinksPfeil {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+}
+#nachlinksA {
+  position: absolute;
+  top: 421px;
+  left: 73px;
+}
+#nachuntenPfeil {
+  position: absolute;
+  top: 470px;
+  left: 20px;
+}
+#nachuntenS {
+  position: absolute;
+  top: 471px;
+  left: 73px;
+}
+#nachrechtsPfeil {
+  position: absolute;
+  top: 520px;
+  left: 20px;
+}
+#nachrechtsD {
+  position: absolute;
+  top: 521px;
+  left: 73px;
+}
+#erklaerung {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#bombe {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 190px;
+  margin-top: 175px
+}
+#nachoben {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 110px;
+  margin-top: 200px;
+}
+#nachlinks {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 108px;
+  margin-top: 225px;
+}
+#nachunten {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 108px;
+  margin-top: 250px;
+}
+#nachrechts {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 110px;
+  margin-top: 275px;
+}
+#umblaettern {
+  position: absolute;
+  top: 550px;
+  left: 475px;
+}
+#bombeLeer_2 {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+#nachobenW_2 {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+}
+#nachlinksA_2 {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+#nachuntenS_2 {
+  position: absolute;
+  top: 300px;
+  left: 250px;
+}
+#nachrechtsD_2 {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+}
+#bombe_2 {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 280px;
+  margin-top: 25px
+}
+#nachoben_2 {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 290px;
+  margin-top: 50px;
+}
+#nachlinks_2 {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 285px;
+  margin-top: 75px;
+}
+#nachunten_2 {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 285px;
+  margin-top: 100px;
+}
+#nachrechts_2 {
+  position: absolute;
+  color: #cb4e4e;
+  padding-left: 285px;
+  margin-top: 125px;
+}
+@media only screen and (max-width:1800px) {
+  #zweispieler {
+    position: absolute;
+    top: 450px;
+    left: 1120px;
+  }
+  #einspieler {
+    position: absolute;
+    top: 510px;
+    left: 1120px;
+  }
+  #anleitung {
+    position: absolute;
+    top: 570px;
+    left: 1120px;
+  }
+  #rueckmeldung {
+    position: absolute;
+    top: 630px;
+    left: 1120px;
+  }
+  #weitereSpiele {
+    position: absolute;
+    top: 690px;
+    left: 1120px;
+  }
+  .speech {
+    position: absolute;
+    top: 130px;
+    left: 685px;
+  	width: 585px;
+  	height: 570px;
+    padding: 1em;
+  	background-color: white;
+  	border: 8px solid #cb4e4e;
+  	border-radius: 15px;
+    box-shadow: 0 6px #ab3c3c;
+  }
+  p.speech:before {
+  	content: ' ';
+  	position: absolute;
+  	left: -40px;
+  	top: 350px;
+  	border: 18px solid;
+  	border-color:  transparent #cb4e4e #cb4e4e transparent;
+  }
+}
+@media only screen and (max-width:1500px) {
+  #zweispieler {
+    position: absolute;
+    top: 450px;
+    left: 1090px;
+  }
+  #einspieler {
+    position: absolute;
+    top: 510px;
+    left: 1090px;
+  }
+  #anleitung {
+    position: absolute;
+    top: 570px;
+    left: 1090px;
+  }
+  #rueckmeldung {
+    position: absolute;
+    top: 630px;
+    left: 1090px;
+  }
+  #weitereSpiele {
+    position: absolute;
+    top: 690px;
+    left: 1090px;
+  }
+}
