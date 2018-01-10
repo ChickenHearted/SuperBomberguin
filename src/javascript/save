@@ -121,12 +121,6 @@
   var explosionRechtsLinksGerade_Mitte = new Image();
   var explosionRechtsLinksGerade_Unten = new Image();
   var explosionRechtsLinksGerade_Oben = new Image();
-  //dazwischen mitte
-  var explosionDazwischen_Mitte = new Image();
-  var explosionDazwischenUnten_Mitte = new Image();
-  var explosionDazwischenRechts_Mitte = new Image();
-  var explosionDazwischenLinks_Mitte = new Image();
-  var explosionDazwischenAlle_Mitte = new Image();
 
 
 
@@ -140,20 +134,28 @@
 
   // unten links
   explosionUntenLinks_Ecke.src = 'images/explosion_untenlinks_ecke.png';
-  explosionUntenLinks_Rechts.src = 'images/explosion_untenlinks_rechtsrechts.png';
-  explosionUntenLinks_Oben.src = 'images/explosion_untenlinks_obenoben.png';
+  explosionUntenLinks_Rechts.src = 'images/explosion_untenlinks_rechts.png';
+  explosionUntenLinks_RechtsRechts.src = 'images/explosion_untenlinks_rechtsrechts.png';
+  explosionUntenLinks_Oben.src = 'images/explosion_untenlinks_oben.png';
+  explosionUntenLinks_ObenOben.src = 'images/explosion_untenlinks_obenoben.png';
   //oben links
   explosionObenLinks_Ecke.src = 'images/explosion_obenlinks_ecke.png';
-  explosionObenLinks_Rechts.src = 'images/explosion_obenlinks_rechtsrechts.png';
-  explosionObenLinks_Unten.src = 'images/explosion_obenlinks_untenunten.png';
+  explosionObenLinks_Rechts.src = 'images/explosion_obenlinks_rechts.png';
+  explosionObenLinks_RechtsRechts.src = 'images/explosion_obenlinks_rechtsrechts.png';
+  explosionObenLinks_Unten.src = 'images/explosion_obenlinks_unten.png';
+  explosionObenLinks_UntenUnten.src = 'images/explosion_obenlinks_untenunten.png';
   //oben rechts
   explosionObenRechts_Ecke.src = 'images/explosion_obenrechts_ecke.png';
-  explosionObenRechts_Links.src = 'images/explosion_obenrechts_linkslinks.png';
-  explosionObenRechts_Unten.src = 'images/explosion_obenrechts_untenunten.png';
+  explosionObenRechts_Links.src = 'images/explosion_obenrechts_links.png';
+  explosionObenRechts_LinksLinks.src = 'images/explosion_obenrechts_linkslinks.png';
+  explosionObenRechts_Unten.src = 'images/explosion_obenrechts_unten.png';
+  explosionObenRechts_UntenUnten.src = 'images/explosion_obenrechts_untenunten.png';
   //unten rechts
   explosionUntenRechts_Ecke.src = 'images/explosion_untenrechts_ecke.png';
-  explosionUntenRechts_Links.src = 'images/explosion_untenrechts_linkslinks.png';
-  explosionUntenRechts_Oben.src = 'images/explosion_untenrechts_obenoben.png';
+  explosionUntenRechts_Links.src = 'images/explosion_untenrechts_links.png';
+  explosionUntenRechts_LinksLinks.src = 'images/explosion_untenrechts_linkslinks.png';
+  explosionUntenRechts_Oben.src = 'images/explosion_untenrechts_oben.png';
+  explosionUntenRechts_ObenOben.src = 'images/explosion_untenrechts_obenoben.png';
   //unten oben gerade
   explosionUntenObenGerade_Mitte.src = 'images/explosion_untenoben_gerade.png';
   explosionUntenObenGerade_Links.src = 'images/explosion_untenoben_geradelinks.png';
@@ -162,12 +164,6 @@
   explosionRechtsLinksGerade_Mitte.src = 'images/explosion_rechtslinks_gerade.png';
   explosionRechtsLinksGerade_Unten.src = 'images/explosion_rechtslinks_geradeunten.png';
   explosionRechtsLinksGerade_Oben.src = 'images/explosion_rechtslinks_geradeoben.png';
-  //dazuwischen
-  explosionDazwischen_Mitte.src = 'images/explosion_dazwischenOben_mitte.png';
-  explosionDazwischenAlle_Mitte.src = 'images/explosion_dazwischenAlle_mitte.png';
-  explosionDazwischenUnten_Mitte.src = 'images/explosion_dazwischenUnten_mitte.png';
-  explosionDazwischenRechts_Mitte.src = 'images/explosion_dazwischenRechts_mitte.png';
-  explosionDazwischenLinks_Mitte.src = 'images/explosion_dazwischenLinks_mitte.png';
 
   bombe.src ='images/bomb.png';
   penguLinks.src ='images/pengu_nachRechts.png';
@@ -188,7 +184,9 @@
     setTimeout(function() {
       ctx.drawImage(explosionUntenLinks_Ecke, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenLinks_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenLinks_RechtsRechts, xbomb + 100, ybomb, 50, 50);
       ctx.drawImage(explosionUntenLinks_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionUntenLinks_ObenOben, xbomb, ybomb - 100, 50, 50);
     }, 3000);
     }
     ctx.drawImage(penguLinks, xlinks, ylinks, 40, 40);
@@ -199,7 +197,9 @@
     setTimeout(function() {
       ctx.drawImage(explosionObenLinks_Ecke, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionObenLinks_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionObenLinks_RechtsRechts, xbomb + 100, ybomb, 50, 50);
       ctx.drawImage(explosionObenLinks_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionObenLinks_UntenUnten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
     //oben rechts
@@ -209,7 +209,9 @@
     setTimeout(function() {
       ctx.drawImage(explosionObenRechts_Ecke, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionObenRechts_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionObenRechts_LinksLinks, xbomb - 100, ybomb, 50, 50);
       ctx.drawImage(explosionObenRechts_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionObenRechts_UntenUnten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
     //unten rechts
@@ -219,17 +221,20 @@
     setTimeout(function() {
       ctx.drawImage(explosionUntenRechts_Ecke, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenRechts_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenRechts_LinksLinks, xbomb - 100, ybomb, 50, 50);
       ctx.drawImage(explosionUntenRechts_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionUntenRechts_ObenOben, xbomb, ybomb - 100, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  oben (1x1)
+    //unten oben gerade - links oben (1x1)
     if (ylinks <= 75 && xlinks >= 80 && xlinks <= 125) {
     ctx.drawImage(bombe, xbomb = 100, ybomb = 50, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (2x1)
@@ -237,9 +242,11 @@
     ctx.drawImage(bombe, xbomb = 200, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (3x1)
@@ -247,9 +254,11 @@
     ctx.drawImage(bombe, xbomb = 300, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (4x1)
@@ -257,9 +266,11 @@
     ctx.drawImage(bombe, xbomb = 400, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (5x1)
@@ -267,9 +278,11 @@
     ctx.drawImage(bombe, xbomb = 500, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (6x1)
@@ -277,9 +290,11 @@
     ctx.drawImage(bombe, xbomb = 600, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade - oben (7x1)
@@ -287,29 +302,33 @@
     ctx.drawImage(bombe, xbomb = 700, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  oben (8x1)
+    //unten oben gerade - rechts oben (8x1)
     if (ylinks <= 75 && xlinks >= 780 && xlinks <= 835) {
     ctx.drawImage(bombe, xbomb = 800, ybomb = 50, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (1x2)
+    //unten oben gerade - links (1x2)
     if (ylinks <= 175 && ylinks >= 125 && xlinks >= 80 && xlinks <= 125) {
     ctx.drawImage(bombe, xbomb = 100, ybomb = 150, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (2x2)
@@ -317,9 +336,11 @@
     ctx.drawImage(bombe, xbomb = 200, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (3x2)
@@ -327,9 +348,11 @@
     ctx.drawImage(bombe, xbomb = 300, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (4x2)
@@ -337,9 +360,11 @@
     ctx.drawImage(bombe, xbomb = 400, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (5x2)
@@ -347,9 +372,11 @@
     ctx.drawImage(bombe, xbomb = 500, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (6x2)
@@ -357,9 +384,11 @@
     ctx.drawImage(bombe, xbomb = 600, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (7x2)
@@ -367,29 +396,33 @@
     ctx.drawImage(bombe, xbomb = 700, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade (8x2)
+    //unten oben gerade - rechts(8x2)
     if (ylinks <= 175 && ylinks >= 125 && xlinks >= 780 && xlinks <= 835) {
     ctx.drawImage(bombe, xbomb = 800, ybomb = 150, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (1x3)
+    //unten oben gerade - links (1x3)
     if (ylinks <= 275 && ylinks >= 225 && xlinks >= 80 && xlinks <= 125) {
     ctx.drawImage(bombe, xbomb = 100, ybomb = 250, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade(2x3)
@@ -397,9 +430,11 @@
     ctx.drawImage(bombe, xbomb = 200, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (3x3)
@@ -407,9 +442,11 @@
     ctx.drawImage(bombe, xbomb = 300, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (4x3)
@@ -417,9 +454,11 @@
     ctx.drawImage(bombe, xbomb = 400, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (5x3)
@@ -427,9 +466,11 @@
     ctx.drawImage(bombe, xbomb = 500, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (6x3)
@@ -437,9 +478,11 @@
     ctx.drawImage(bombe, xbomb = 600, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (7x3)
@@ -447,29 +490,33 @@
     ctx.drawImage(bombe, xbomb = 700, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (8x3)
+    //unten oben gerade - rechts (8x3)
     if (ylinks <= 275 && ylinks >= 225 && xlinks >= 780 && xlinks <= 835) {
     ctx.drawImage(bombe, xbomb = 800, ybomb = 250, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (1x4)
+    //unten oben gerade - links (1x4)
     if (ylinks <= 375 && ylinks >= 325 && xlinks >= 80 && xlinks <= 125) {
     ctx.drawImage(bombe, xbomb = 100, ybomb = 350, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade(2x4)
@@ -477,9 +524,11 @@
     ctx.drawImage(bombe, xbomb = 200, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (3x4)
@@ -487,9 +536,11 @@
     ctx.drawImage(bombe, xbomb = 300, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (4x4)
@@ -497,9 +548,11 @@
     ctx.drawImage(bombe, xbomb = 400, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (5x4)
@@ -507,9 +560,11 @@
     ctx.drawImage(bombe, xbomb = 500, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (6x4)
@@ -517,9 +572,11 @@
     ctx.drawImage(bombe, xbomb = 600, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
     //unten oben gerade (7x4)
@@ -527,775 +584,528 @@
     ctx.drawImage(bombe, xbomb = 700, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (8x4)
+    //unten oben gerade - rechts (8x4)
     if (ylinks <= 375 && ylinks >= 325 && xlinks >= 780 && xlinks <= 835) {
     ctx.drawImage(bombe, xbomb = 800, ybomb = 350, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (1x5)
+    //unten oben gerade - links unten (1x5)
     if (ylinks >= 435 && xlinks >= 80 && xlinks <= 125) {
     ctx.drawImage(bombe, xbomb = 100, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (2x5)
+    //unten oben gerade - links unten (2x5)
     if (ylinks >= 435 && xlinks >= 180 && xlinks <= 225) {
     ctx.drawImage(bombe, xbomb = 200, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (3x5)
+    //unten oben gerade - links unten (3x5)
     if (ylinks >= 435 && xlinks >= 280 && xlinks <= 325) {
     ctx.drawImage(bombe, xbomb = 300, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (4x5)
+    //unten oben gerade - links unten (4x5)
     if (ylinks >= 435 && xlinks >= 380 && xlinks <= 425) {
     ctx.drawImage(bombe, xbomb = 400, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (5x5)
+    //unten oben gerade - links unten (5x5)
     if (ylinks >= 435 && xlinks >= 480 && xlinks <= 525) {
     ctx.drawImage(bombe, xbomb = 500, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (6x5)
+    //unten oben gerade - links unten (6x5)
     if (ylinks >= 435 && xlinks >= 580 && xlinks <= 625) {
     ctx.drawImage(bombe, xbomb = 600, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (7x5)
+    //unten oben gerade - links unten (7x5)
     if (ylinks >= 435 && xlinks >= 680 && xlinks <= 725) {
     ctx.drawImage(bombe, xbomb = 700, ybomb = 450, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb + 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 100, ybomb, 50, 50);
     }, 3000);
     }
-    //unten oben gerade  (8x5)
+    //unten oben gerade - rechts unten (8x5)
     if (ylinks >= 435 && xlinks >= 780 && xlinks <= 825) {
     ctx.drawImage(bombe, xbomb = 800, ybomb = 450, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 100, ybomb, 50, 50);
+      ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb - 50, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
     }, 3000);
     }
 
 
-    //rechts links gerade (1x1)
+    //unten oben gerade - oben links (1x1)
     if (xlinks <= 75 && ylinks >= 85 && ylinks <= 125) {
-    ctx.drawImage(bombe, xbomb = 100, ybomb = 100, 50, 50);
+    ctx.drawImage(bombe, xbomb = 50, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (1x2)
+    //unten oben gerade - links (1x2)
     if (xlinks <= 75 && ylinks >= 185 && ylinks <= 225) {
-    ctx.drawImage(bombe, xbomb = 100, ybomb = 200, 50, 50);
+    ctx.drawImage(bombe, xbomb = 50, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (1x3)
+    //unten oben gerade - links (1x3)
     if (xlinks <= 75 && ylinks >= 285 && ylinks <= 325) {
-    ctx.drawImage(bombe, xbomb = 100, ybomb = 300, 50, 50);
+    ctx.drawImage(bombe, xbomb = 50, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (1x4)
+    //unten oben gerade - unten links (1x4)
     if (xlinks <= 75 && ylinks >= 385 && ylinks <= 425) {
-    ctx.drawImage(bombe, xbomb = 100, ybomb = 400, 50, 50);
+    ctx.drawImage(bombe, xbomb = 50, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (2x1)
+    //unten oben gerade - oben(2x1)
     if (xlinks <= 175 && xlinks >= 125 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 150, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (2x2)
+    //unten oben gerade (2x2)
     if (xlinks <= 175 && xlinks >= 125 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 150, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (2x3)
+    //unten oben gerade (2x3)
     if (xlinks <= 175 && xlinks >= 125 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 150, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (2x4)
+    //unten oben gerade - unten (2x4)
     if (xlinks <= 175 && xlinks >= 125 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 150, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (3x1)
+    //unten oben gerade - oben(3x1)
     if (xlinks <= 275 && xlinks >= 225 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 250, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (3x2)
+    //unten oben gerade (3x2)
     if (xlinks <= 275 && xlinks >= 225 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 250, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (3x3)
+    //unten oben gerade (3x3)
     if (xlinks <= 275 && xlinks >= 225 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 250, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (3x4)
+    //unten oben gerade - unten (3x4)
     if (xlinks <= 275 && xlinks >= 225 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 250, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (4x1)
+    //unten oben gerade - oben(4x1)
     if (xlinks <= 375 && xlinks >= 325 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 350, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (4x2)
+    //unten oben gerade (4x2)
     if (xlinks <= 375 && xlinks >= 325 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 350, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (4x3)
+    //unten oben gerade (4x3)
     if (xlinks <= 375 && xlinks >= 325 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 350, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (4x4)
+    //unten oben gerade - unten (4x4)
     if (xlinks <= 375 && xlinks >= 325 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 350, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (5x1)
+    //unten oben gerade - oben(5x1)
     if (xlinks <= 475 && xlinks >= 425 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 450, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (5x2)
+    //unten oben gerade (5x2)
     if (xlinks <= 475 && xlinks >= 425 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 450, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (5x3)
+    //unten oben gerade (5x3)
     if (xlinks <= 475 && xlinks >= 425 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 450, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (5x4)
+    //unten oben gerade - unten (5x4)
     if (xlinks <= 475 && xlinks >= 425 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 450, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (6x1)
+    //unten oben gerade - oben(6x1)
     if (xlinks <= 575 && xlinks >= 525 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 550, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (6x2)
+    //unten oben gerade (6x2)
     if (xlinks <= 575 && xlinks >= 525 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 550, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (6x3)
+    //unten oben gerade (6x3)
     if (xlinks <= 575 && xlinks >= 525 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 550, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (6x4)
+    //unten oben gerade - unten (6x4)
     if (xlinks <= 575 && xlinks >= 525 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 550, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (7x1)
+    //unten oben gerade - oben(7x1)
     if (xlinks <= 675 && xlinks >= 625 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 650, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (7x2)
+    //unten oben gerade (7x2)
     if (xlinks <= 675 && xlinks >= 625 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 650, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (7x3)
+    //unten oben gerade (7x3)
     if (xlinks <= 675 && xlinks >= 625 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 650, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (7x4)
+    //unten oben gerade - unten (7x4)
     if (xlinks <= 675 && xlinks >= 625 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 650, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (8x1)
+    //unten oben gerade - oben(8x1)
     if (xlinks <= 775 && xlinks >= 725 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 750, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (8x2)
+    //unten oben gerade (8x2)
     if (xlinks <= 775 && xlinks >= 725 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 750, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (8x3)
+    //unten oben gerade (8x3)
     if (xlinks <= 775 && xlinks >= 725 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 750, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (8x4)
+    //unten oben gerade - unten (8x4)
     if (xlinks <= 775 && xlinks >= 725 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 750, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (9x1)
+    //unten oben gerade - oben(9x1)
     if (xlinks <= 875 && xlinks >= 825 && ylinks >= 85 && ylinks <= 125) {
     ctx.drawImage(bombe, xbomb = 850, ybomb = 100, 50, 50);
 
     setTimeout(function() {
       ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (9x2)
+    //unten oben gerade (9x2)
     if (xlinks <= 875 && xlinks >= 825 && ylinks >= 185 && ylinks <= 225) {
     ctx.drawImage(bombe, xbomb = 850, ybomb = 200, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade (9x3)
+    //unten oben gerade (9x3)
     if (xlinks <= 875 && xlinks >= 825 && ylinks >= 285 && ylinks <= 325) {
     ctx.drawImage(bombe, xbomb = 850, ybomb = 300, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb + 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 100, 50, 50);
     }, 3000);
     }
-    //rechts links gerade  (9x4)
+    //unten oben gerade - unten (9x4)
     if (xlinks <= 875 && xlinks >= 825 && ylinks >= 385 && ylinks <= 425) {
     ctx.drawImage(bombe, xbomb = 850, ybomb = 400, 50, 50);
 
     setTimeout(function() {
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 100, 50, 50);
+      ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb - 50, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Mitte, xbomb, ybomb, 50, 50);
       ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
     }, 3000);
     }
-
-
-    //dazwischen oben (1)
-    if (ylinks <= 75 && xlinks >= 135 && xlinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 150, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (2)
-    if (ylinks <= 75 && xlinks >= 235 && xlinks <= 285) {
-    ctx.drawImage(bombe, xbomb = 250, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (3)
-    if (ylinks <= 75 && xlinks >= 335 && xlinks <= 385) {
-    ctx.drawImage(bombe, xbomb = 350, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (4)
-    if (ylinks <= 75 && xlinks >= 435 && xlinks <= 485) {
-    ctx.drawImage(bombe, xbomb = 450, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (5)
-    if (ylinks <= 75 && xlinks >= 535 && xlinks <= 585) {
-    ctx.drawImage(bombe, xbomb = 550, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (6)
-    if (ylinks <= 75 && xlinks >= 635 && xlinks <= 685) {
-    ctx.drawImage(bombe, xbomb = 650, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen oben (7)
-    if (ylinks <= 75 && xlinks >= 735 && xlinks <= 785) {
-    ctx.drawImage(bombe, xbomb = 750, ybomb = 50, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischen_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-    }, 3000);
-    }
-
-    //dazwischen unten (1)
-    if (ylinks >= 435 && xlinks >= 135 && xlinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 150, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (2)
-    if (ylinks >= 435 && xlinks >= 235 && xlinks <= 285) {
-    ctx.drawImage(bombe, xbomb = 250, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (3)
-    if (ylinks >= 435 && xlinks >= 335 && xlinks <= 385) {
-    ctx.drawImage(bombe, xbomb = 350, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (4)
-    if (ylinks >= 435 && xlinks >= 435 && xlinks <= 485) {
-    ctx.drawImage(bombe, xbomb = 450, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (5)
-    if (ylinks >= 435 && xlinks >= 535 && xlinks <= 585) {
-    ctx.drawImage(bombe, xbomb = 550, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (6)
-    if (ylinks >= 435 && xlinks >= 635 && xlinks <= 685) {
-    ctx.drawImage(bombe, xbomb = 650, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen unten (7)
-    if (ylinks >= 435 && xlinks >= 735 && xlinks <= 785) {
-    ctx.drawImage(bombe, xbomb = 750, ybomb = 450, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenUnten_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-
-    //dazwischen rechts (1)
-    if (xlinks >= 835 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 850, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenRechts_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen rechts (2)
-    if (xlinks >= 835 && ylinks >= 235 && ylinks <= 285) {
-    ctx.drawImage(bombe, xbomb = 850, ybomb = 250, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenRechts_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen rechts (3)
-    if (xlinks >= 835 && ylinks >= 335 && ylinks <= 385) {
-    ctx.drawImage(bombe, xbomb = 850, ybomb = 350, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenRechts_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-
-    //dazwischen links (1)
-    if (xlinks <= 75 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 50, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenLinks_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen links (2)
-    if (xlinks <= 75 && ylinks >= 235 && ylinks <= 285) {
-    ctx.drawImage(bombe, xbomb = 50, ybomb = 250, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenLinks_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-    //dazwischen links (3)
-    if (xlinks <= 75 && ylinks >= 335 && ylinks <= 385) {
-    ctx.drawImage(bombe, xbomb = 50, ybomb = 350, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenLinks_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-    }, 3000);
-    }
-
-    //dazwischen (1x1)
-    if (xlinks <= 175 && xlinks >= 135 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 150, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (2x1)
-    if (xlinks <= 275 && xlinks >= 235 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 250, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (3x1)
-    if (xlinks <= 375 && xlinks >= 335 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 350, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (4x1)
-    if (xlinks <= 475 && xlinks >= 435 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 450, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (5x1)
-    if (xlinks <= 575 && xlinks >= 535 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 550, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (6x1)
-    if (xlinks <= 675 && xlinks >= 635 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 650, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-    //dazwischen (7x1)
-    if (xlinks <= 775 && xlinks >= 735 && ylinks >= 135 && ylinks <= 185) {
-    ctx.drawImage(bombe, xbomb = 750, ybomb = 150, 50, 50);
-
-    setTimeout(function() {
-      ctx.drawImage(explosionDazwischenAlle_Mitte, xbomb, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Unten, xbomb, ybomb + 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Rechts, xbomb + 50, ybomb, 50, 50);
-      ctx.drawImage(explosionRechtsLinksGerade_Oben, xbomb, ybomb - 50, 50, 50);
-      ctx.drawImage(explosionUntenObenGerade_Links, xbomb - 50, ybomb, 50, 50);
-    }, 3000);
-    }
-
-
 
 
 
