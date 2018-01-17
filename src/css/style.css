@@ -81,6 +81,22 @@ body {
 #zuruck:hover {
   top: 728px;
 }
+#endezuruck {
+  position: absolute;
+  top: 575px;
+  left: 445px;
+}
+#endezuruck:hover {
+  top: 578px;
+}
+#nocheinmal {
+  position: absolute;
+  top: 575px;
+  left: 530px;
+}
+#nocheinmal:hover {
+  top: 578px;
+}
 button {
   font-size: 15px;
   font-style: Arial;
@@ -321,77 +337,47 @@ p.speech:before {
   padding-left: 285px;
   margin-top: 125px;
 }
-@media only screen and (max-width:1800px) {
-  #zweispieler {
-    position: absolute;
-    top: 450px;
-    left: 1120px;
+@media only screen and (min-width: 1500px) {
+  #zweispieler, #einspieler, #anleitung, #rueckmeldung, #weitereSpiele {
+    left: 1150px;
   }
-  #einspieler {
-    position: absolute;
-    top: 510px;
-    left: 1120px;
+  #home {
+    left: 400px;
   }
-  #anleitung {
-    position: absolute;
-    top: 570px;
-    left: 1120px;
+  #zurueck {
+    left: 500px;
   }
-  #rueckmeldung {
-    position: absolute;
-    top: 630px;
-    left: 1120px;
+  #home, #zurueck {
+    top: 150px;
   }
-  #weitereSpiele {
-    position: absolute;
-    top: 690px;
-    left: 1120px;
+  #home:hover, #zurueck:hover {
+    top: 153px;
   }
   .speech {
-    position: absolute;
     top: 130px;
-    left: 685px;
-  	width: 585px;
-  	height: 570px;
-    padding: 1em;
-  	background-color: white;
-  	border: 8px solid #cb4e4e;
-  	border-radius: 15px;
-    box-shadow: 0 6px #ab3c3c;
-  }
-  p.speech:before {
-  	content: ' ';
-  	position: absolute;
-  	left: -40px;
-  	top: 350px;
-  	border: 18px solid;
-  	border-color:  transparent #cb4e4e #cb4e4e transparent;
-  }
+    left: 690px;
 }
-@media only screen and (max-width:1500px) {
-  #zweispieler {
-    position: absolute;
-    top: 450px;
-    left: 1090px;
+@media only screen and (min-width: 1700px) {
+  #zweispieler, #einspieler, #anleitung, #rueckmeldung, #weitereSpiele {
+    left: 1200px;
   }
-  #einspieler {
-    position: absolute;
-    top: 510px;
-    left: 1090px;
+  #zuruck {
+    left: 500px;
   }
-  #anleitung {
-    position: absolute;
-    top: 570px;
-    left: 1090px;
+  #home {
+    left: 500px;
   }
-  #rueckmeldung {
-    position: absolute;
-    top: 630px;
-    left: 1090px;
+  #zurueck {
+    left: 600px;
   }
-  #weitereSpiele {
-    position: absolute;
-    top: 690px;
-    left: 1090px;
+  #home, #zurueck {
+  top: 170px;
+  }
+  #home:hover, #zurueck:hover {
+    top: 173px;
+  }
+  .speech {
+    top: 160px;
+    left: 785px;
   }
 }
