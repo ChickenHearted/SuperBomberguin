@@ -184,8 +184,8 @@
 
 
   bombe.src ='images/bomb.png';
-  penguLinks.src ='images/pengu_nachRechts.png';
-  penguRechts.src ='images/pengu_nachLinks.png';
+  penguLinks.src ='images/pengu_nachRechts_Gelb.png';
+  penguRechts.src ='images/pengu_nachLinks_Rosa.png';
   document.onkeydown=function(e) {
     pos = 1;
     key = window.event?e.keyCode:e.which;

@@ -81,6 +81,14 @@ body {
 #zuruck:hover {
   top: 728px;
 }
+#auswahl {
+  position: absolute;
+  top: 725px;
+  left: 1170px;
+}
+#auswahl:hover {
+  top: 728px;
+}
 #endezuruck {
   position: absolute;
   top: 575px;
@@ -96,6 +104,62 @@ body {
 }
 #nocheinmal:hover {
   top: 578px;
+}
+#abbrechen {
+  position: absolute;
+  top: 725px;
+  left: 400px;
+}
+#abbrechen:hover {
+  top: 728px;
+}
+#rot_blau {
+  position: absolute;
+  top: 235px;
+  left: 800px;
+}
+#rot_blau:hover {
+  top: 238px;
+}
+#blau_rot {
+  position: absolute;
+  top: 300px;
+  left: 800px;
+}
+#blau_rot:hover {
+  top: 303px;
+}
+#rosa_gelb {
+  position: absolute;
+  top: 365px;
+  left: 797px;
+}
+#rosa_gelb:hover {
+  top: 368px;
+}
+#gelb_rosa {
+  position: absolute;
+  top: 430px;
+  left: 797px;
+}
+#gelb_rosa:hover {
+  top: 433px;
+}
+#pink_gruen {
+  position: absolute;
+  top: 495px;
+  left: 799px;
+}
+#pink_gruen:hover {
+  top: 498px;
+}
+#gruen_pink {
+  position: absolute;
+  top: 560px;
+  left: 799px;
+}
+#gruen_pink:hover {
+  top: 563px;
 }
 button {
   font-size: 15px;
@@ -358,11 +422,56 @@ p.speech:before {
     left: 690px;
 }
 @media only screen and (min-width: 1700px) {
+  #rot_blau {
+    top: 265px;
+    left: 900px;
+  }
+  #rot_blau:hover {
+    top: 268px;
+  }
+  #blau_rot {
+    top: 330px;
+    left: 900px;
+  }
+  #blau_rot:hover {
+    top: 333px;
+  }
+  #rosa_gelb {
+    top: 395px;
+    left: 897px;
+  }
+  #rosa_gelb:hover {
+    top: 398px;
+  }
+  #gelb_rosa {
+    top: 460px;
+    left: 897px;
+  }
+  #gelb_rosa:hover {
+    top: 463px;
+  }
+  #pink_gruen {
+    top: 525px;
+    left: 899px;
+  }
+  #pink_gruen:hover {
+    top: 528px;
+  }
+  #gruen_pink {
+    top: 590px;
+    left: 899px;
+  }
+  #gruen_pink:hover {
+    top: 593px;
+  }
   #zweispieler, #einspieler, #anleitung, #rueckmeldung, #weitereSpiele {
     left: 1200px;
   }
-  #zuruck {
+  #zuruck, #abbrechen {
     left: 500px;
+  }
+  #auswahl {
+    left: 1270px;
   }
   #home {
     left: 500px;
