@@ -1517,11 +1517,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 200) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 200) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1544,11 +1544,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 200) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 200) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1571,11 +1571,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 200) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 200) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1598,11 +1598,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 200) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 200) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 200 && xlinks >= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1625,11 +1625,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 300) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 300) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1652,11 +1652,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 300) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 300) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1679,11 +1679,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 300) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 300) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1706,11 +1706,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 300) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 300) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 300 && xlinks >= 250) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1733,11 +1733,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 400) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 400) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1760,11 +1760,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 400) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 400) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1787,11 +1787,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 400) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 400) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1814,11 +1814,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 400) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 400) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 400 && xlinks >= 350) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1841,11 +1841,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) &&  ylinks <= 190 && xlinks <= 500) {
+        if ((functionBCompleted = true) &&  ylinks <= 190 && xlinks <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 500) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1868,11 +1868,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 500) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 500) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1895,11 +1895,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 500) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 500) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1922,11 +1922,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 500) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 500) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 500 && xlinks >= 450) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1949,11 +1949,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 600) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 600) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -1976,11 +1976,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 600) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 600) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2003,11 +2003,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 600) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 600) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2030,11 +2030,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 600) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 600) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 600 && xlinks >= 550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2057,11 +2057,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 700) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 700) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2084,11 +2084,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 700) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 700) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2111,11 +2111,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 700) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 700) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2138,11 +2138,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 700) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 700) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 700 && xlinks >= 650) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2165,11 +2165,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 800) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 800) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2192,11 +2192,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 800) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 800) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2219,11 +2219,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 800) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 800) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2246,11 +2246,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 800) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 800) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 800 && xlinks >= 750) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2273,11 +2273,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 900) {
+        if ((functionBCompleted = true) && ylinks <= 190 && xlinks <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 900) {
+        if ((functionBCompleted = true) && yrechts <= 190 && xrechts <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2300,11 +2300,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 250, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 900) {
+        if ((functionBCompleted = true) && ylinks >= 110 && ylinks <= 290 && xlinks <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 900) {
+        if ((functionBCompleted = true) && yrechts >= 110 && yrechts <= 290 && xrechts <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2327,11 +2327,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 350, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 900) {
+        if ((functionBCompleted = true) && ylinks >= 210 && ylinks <= 390 && xlinks <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 900) {
+        if ((functionBCompleted = true) && yrechts >= 210 && yrechts <= 390 && xrechts <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2354,11 +2354,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 450, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 900) {
+        if ((functionBCompleted = true) && ylinks >= 310 && ylinks <= 490 && xlinks <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 900) {
+        if ((functionBCompleted = true) && yrechts >= 310 && yrechts <= 490 && xrechts <= 900 && xlinks >= 850) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2384,11 +2384,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 100 && xlinks <= 240 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 60 && xlinks <= 240 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 100 && xrechts <= 240 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 60 && xrechts <= 240 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2413,11 +2413,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 200 && xlinks <= 340 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 160 && xlinks <= 340 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 200 && xrechts <= 340 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 160 && xrechts <= 340 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2442,11 +2442,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 300 && xlinks <= 440 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 260 && xlinks <= 440 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 300 && xrechts <= 440 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 260 && xrechts <= 440 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2471,11 +2471,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 400 && xlinks <= 540 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 360 && xlinks <= 540 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 400 && xrechts <= 540 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 360 && xrechts <= 540 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2500,11 +2500,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 500 && xlinks <= 640 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 460 && xlinks <= 640 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 500 && xrechts <= 640 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 460 && xrechts <= 640 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2529,11 +2529,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 600 && xlinks <= 740 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 560 && xlinks <= 740 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 600 && xrechts <= 740 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 560 && xrechts <= 740 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -2558,11 +2558,11 @@
         ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 100, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && xlinks >= 700 && xlinks <= 840 && ylinks <= 150) {
+        if ((functionBCompleted = true) && xlinks >= 660 && xlinks <= 840 && ylinks <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && xrechts >= 700 && xrechts <= 840 && yrechts <= 150) {
+        if ((functionBCompleted = true) && xrechts >= 660 && xrechts <= 840 && yrechts <= 150) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -3063,11 +3063,11 @@
         ctx.drawImage(explosionUntenObenGerade_Links, 400, 150, 50, 50);
       }, 2000);
       setTimeout(function() {
-        if ((functionBCompleted = true) && ylinks >= 60 && ylinks <= 250 && xlinks >= 460 && xlinks <=  550) {
+        if ((functionBCompleted = true) && ylinks >= 60 && ylinks <= 250 && xlinks >= 360 && xlinks <=  550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         }
-        if ((functionBCompleted = true) && yrechts >= 60 && yrechts <= 250 && xrechts >= 460 && xrechts <=  550) {
+        if ((functionBCompleted = true) && yrechts >= 60 && yrechts <= 250 && xrechts >= 360 && xrechts <=  550) {
           ctx.drawImage(kO, 50, 50, 850, 450);
           window.location.href="zweispielerEnde.html";
         } else {
@@ -5538,11 +5538,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 200) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 200) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5565,11 +5565,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 200) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 200) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5592,11 +5592,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 200) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 200) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5619,11 +5619,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 200) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 200) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 200 && xlinks >= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5646,11 +5646,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 300) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 300) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5673,11 +5673,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 300) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 300) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5700,11 +5700,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 300) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 300) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5727,11 +5727,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 300) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 300) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 300 && xlinks >= 250) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5754,11 +5754,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 400) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 400) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5781,11 +5781,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 400) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 400) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5808,11 +5808,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 400) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 400) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5835,11 +5835,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 400) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 400) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 400 && xlinks >= 350) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5862,11 +5862,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 500) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 500) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5889,11 +5889,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 500) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 500) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5916,11 +5916,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 500) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 500) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5943,11 +5943,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 500) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 500) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 500 && xlinks >= 450) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5970,11 +5970,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 600) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 600) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -5997,11 +5997,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 600) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 600) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6024,11 +6024,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 600) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 600) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6051,11 +6051,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 600) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 600) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 600 && xlinks >= 550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6078,11 +6078,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 700) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 700) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6105,11 +6105,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 700) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 700) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6132,11 +6132,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 700) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 700) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6159,11 +6159,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 700) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 700) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 700 && xlinks >= 650) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6186,11 +6186,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 800) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 800) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6213,11 +6213,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 800) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 800) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6240,11 +6240,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 800) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 800) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6267,11 +6267,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 800) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 800) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 800 && xlinks >= 750) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6294,11 +6294,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 900) {
+              if ((functionBCompleted = true) && ylinks >= 50 && ylinks <= 190 && xlinks <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 900) {
+              if ((functionBCompleted = true) && yrechts >= 50 && yrechts <= 190 && xrechts <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6321,11 +6321,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 250, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 900) {
+              if ((functionBCompleted = true) && ylinks >= 150 && ylinks <= 290 && xlinks <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 900) {
+              if ((functionBCompleted = true) && yrechts >= 150 && yrechts <= 290 && xrechts <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6348,11 +6348,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 350, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 900) {
+              if ((functionBCompleted = true) && ylinks >= 250 && ylinks <= 390 && xlinks <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 900) {
+              if ((functionBCompleted = true) && yrechts >= 250 && yrechts <= 390 && xrechts <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6375,11 +6375,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 850, 450, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 900) {
+              if ((functionBCompleted = true) && ylinks >= 350 && ylinks <= 490 && xlinks <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 900) {
+              if ((functionBCompleted = true) && yrechts >= 350 && yrechts <= 490 && xrechts <= 900 && xlinks >= 850) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6405,11 +6405,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 150, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 100 && xlinks <= 240 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 60 && xlinks <= 240 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 100 && xrechts <= 240 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 60 && xrechts <= 240 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6434,11 +6434,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 250, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 200 && xlinks <= 340 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 160 && xlinks <= 340 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 200 && xrechts <= 340 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 160 && xrechts <= 340 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6463,11 +6463,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 350, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 300 && xlinks <= 440 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 260 && xlinks <= 440 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 300 && xrechts <= 440 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 260 && xrechts <= 440 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6492,11 +6492,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 450, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 400 && xlinks <= 540 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 360 && xlinks <= 540 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 400 && xrechts <= 540 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 360 && xrechts <= 540 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6521,11 +6521,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 550, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 500 && xlinks <= 640 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 460 && xlinks <= 640 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 500 && xrechts <= 640 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 460 && xrechts <= 640 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6550,11 +6550,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 650, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 600 && xlinks <= 740 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 560 && xlinks <= 740 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 600 && xrechts <= 740 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 560 && xrechts <= 740 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -6579,11 +6579,11 @@
               ctx.drawImage(explosionRechtsLinksGerade_Unten, 750, 100, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && xlinks >= 700 && xlinks <= 840 && ylinks <= 150) {
+              if ((functionBCompleted = true) && xlinks >= 660 && xlinks <= 840 && ylinks <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && xrechts >= 700 && xrechts <= 840 && yrechts <= 150) {
+              if ((functionBCompleted = true) && xrechts >= 660 && xrechts <= 840 && yrechts <= 150) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
@@ -7084,11 +7084,11 @@
               ctx.drawImage(explosionUntenObenGerade_Links, 400, 150, 50, 50);
             }, 2000);
             setTimeout(function() {
-              if ((functionBCompleted = true) && ylinks >= 60 && ylinks <= 250 && xlinks >= 460 && xlinks <=  550) {
+              if ((functionBCompleted = true) && ylinks >= 60 && ylinks <= 250 && xlinks >= 360 && xlinks <=  550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               }
-              if ((functionBCompleted = true) && yrechts >= 60 && yrechts <= 250 && xrechts >= 460 && xrechts <=  550) {
+              if ((functionBCompleted = true) && yrechts >= 60 && yrechts <= 250 && xrechts >= 360 && xrechts <=  550) {
                 ctx.drawImage(kO, 50, 50, 850, 450);
                 window.location.href="zweispielerEnde.html";
               } else {
